@@ -44,4 +44,8 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="start">Start</string>
+    <string name="your_name">Your Name</string>
 </resources>

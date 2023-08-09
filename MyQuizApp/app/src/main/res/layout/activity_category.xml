@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".CategoryActivity">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="cat1 mascot"
+        android:src="@drawable/back_arrow" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginBottom="10dp"
+        android:text="Back"
+        android:textAlignment="left"
+        android:textColor="@color/text"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Hi"
+        android:textAlignment="center"
+        android:textColor="@color/text3"
+        android:textSize="27sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Choose a Category to do a quiz"
+        android:textAlignment="center"
+        android:textColor="@color/text2"
+        android:textSize="40sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="cat1 mascot"
+        android:src="@drawable/cat_1" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Songs"
+        android:layout_marginTop="-110dp"
+        android:layout_marginLeft="35dp"
+        android:textAlignment="left"
+        android:textColor="@color/text3"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="190dp"
+        android:contentDescription="cat2 mascot"
+        android:src="@drawable/cat_2" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:text="Groups"
+        android:layout_marginTop="-110dp"
+        android:layout_marginLeft="220dp"
+        android:textAlignment="left"
+        android:textColor="@color/text3"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-18dp"
+        android:contentDescription="cat3 mascot"
+        android:src="@drawable/cat_3" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="General"
+        android:layout_marginTop="-100dp"
+        android:layout_marginLeft="35dp"
+        android:textAlignment="left"
+        android:textColor="@color/text3"
+        android:textSize="36sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_quiz"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="@color/tertiary"
+        android:paddingVertical="12dp"
+        android:text="Start Quiz"
+        android:textSize="29sp"
+        android:textColor="@color/text2"
+        app:cornerRadius="40dp" />
+
+
+
+
+
+
+</LinearLayout>

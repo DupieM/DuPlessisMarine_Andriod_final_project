@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.MyQuizApp" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.MyQuizApp" parent="android:Theme.Material.Light.NoActionBar">
+    </style>
     <!-- Base application theme. -->
     <style name="Base.Theme.MyQuizApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-         <item name="colorPrimary">@color/light_purple</item>
+
     </style>
 
     <style name="splashScreenTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="android:windowBackground">@color/light_purple</item>
-        <item name="android:statusBarColor">@color/light_purple</item>
+        <item name="colorPrimary">@color/light_purple</item>
+<!--        <item name="android:windowBackground">@color/light_purple</item>-->
+        <!--        <item name="android:statusBarColor">@color/light_purple</item>-->
+    </style>
+    <!-- Base application theme. -->
+    <style name="Base.splashScreenTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 </resources>

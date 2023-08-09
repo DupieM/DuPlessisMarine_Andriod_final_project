@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="192dp"
+        android:contentDescription="kpop mascot"
+        android:src="@drawable/kpop_img" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="K-Pop Quiz"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textFontWeight="800"
+        android:textSize="54sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Let's Play and get a high score"
+        android:textAlignment="center"
+        android:textColor="@color/text2"
+        android:textFontWeight="502"
+        android:textSize="45sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:background="@drawable/roundstyle"
+        android:id="@+id/btn_start"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:backgroundTint="@color/secondary"
+        android:paddingVertical="12dp"
+        android:text="Play Now"
+        android:textSize="29sp"
+        android:textColor="@color/text2"
+        android:textFontWeight="602" />
+
+        <com.google.android.material.button.MaterialButton
+            android:background="@drawable/roundstyle"
+            android:id="@+id/btn_end"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="@color/tertiary"
+            android:paddingVertical="12dp"
+            android:text="Settings"
+            android:textSize="29sp"
+            android:textColor="@color/text2"
+            android:textFontWeight="602" />
+
+
+</LinearLayout>
