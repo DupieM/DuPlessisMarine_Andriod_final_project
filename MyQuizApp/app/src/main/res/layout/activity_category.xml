@@ -23,7 +23,7 @@
         android:layout_marginTop="-40dp"
         android:layout_marginBottom="10dp"
         android:text="Back"
-        android:textAlignment="left"
+        android:textAlignment="center"
         android:textColor="@color/text"
         android:textSize="30sp" />
 
@@ -66,7 +66,7 @@
         android:text="Songs"
         android:layout_marginTop="-110dp"
         android:layout_marginLeft="35dp"
-        android:textAlignment="left"
+        android:textAlignment="center"
         android:textColor="@color/text3"
         android:textSize="40sp" />
 
@@ -84,7 +84,7 @@
         android:text="Groups"
         android:layout_marginTop="-110dp"
         android:layout_marginLeft="220dp"
-        android:textAlignment="left"
+        android:textAlignment="center"
         android:textColor="@color/text3"
         android:textSize="40sp" />
 
@@ -102,7 +102,7 @@
         android:text="General"
         android:layout_marginTop="-100dp"
         android:layout_marginLeft="35dp"
-        android:textAlignment="left"
+        android:textAlignment="center"
         android:textColor="@color/text3"
         android:textSize="36sp" />
 

@@ -71,3 +71,10 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 }
+
+//android {
+//// ...
+//    aaptOptions.cruncherEnabled = false
+//    aaptOptions.useNewCruncher = false
+//// ...
+//}
