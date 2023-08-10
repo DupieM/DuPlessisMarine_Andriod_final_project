@@ -41,7 +41,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:background="@drawable/roundstyle"
-        android:id="@+id/btn_start"
+        android:id="@+id/btn_second"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
