@@ -11,7 +11,7 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="192dp"
+        android:layout_height="194dp"
         android:contentDescription="kpop mascot"
         android:src="@drawable/kpop_img" />
 
@@ -40,7 +40,6 @@
         android:textSize="45sp" />
 
     <com.google.android.material.button.MaterialButton
-        android:background="@drawable/roundstyle"
         android:id="@+id/btn_second"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
@@ -51,10 +50,10 @@
         android:text="Play Now"
         android:textSize="29sp"
         android:textColor="@color/text2"
-        android:textFontWeight="602" />
+        android:textFontWeight="602"
+        app:cornerRadius="40dp"/>
 
         <com.google.android.material.button.MaterialButton
-            android:background="@drawable/roundstyle"
             android:id="@+id/btn_end"
             android:layout_width="340dp"
             android:layout_height="wrap_content"
@@ -65,7 +64,8 @@
             android:text="Settings"
             android:textSize="29sp"
             android:textColor="@color/text2"
-            android:textFontWeight="602" />
+            android:textFontWeight="602"
+            app:cornerRadius="40dp"/>
 
 
 </LinearLayout>

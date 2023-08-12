@@ -25,10 +25,10 @@ class HomeActivity : AppCompatActivity() {
 
         binding.btnSecond.setOnClickListener {
 
-                    val intent = Intent(this, CategoryActivity::class.java)
+            val intent = Intent(this, CategoryActivity::class.java)
 
-                    startActivity(intent)
-//                    finish()
+            startActivity(intent)
+//          finish()
 
 
         }
