@@ -1,7 +1,6 @@
-package com.example.iamrobot.models
+package com.example.myquizapp.models
 
-//blueprint for how mu question should look
-data class Question(
+data class Group_Question(
     val id: Int,
     val questionText: String,
     val icon: Int, // all images should be int
@@ -10,6 +9,3 @@ data class Question(
     val optionThree: String?, // question marks means this value kan be null
     val correctAnswer: String
 )
-
-
-// Side note: you can have more than one type of data class for your question
