@@ -22,16 +22,29 @@ class HomeActivity : AppCompatActivity() {
 
 //        setContentView(R.layout.activity_home)
 
+        binding.btnStart.setOnClickListener {
+            var username = binding.etUsername.text
 
-        binding.btnSecond.setOnClickListener {
+            if (username != null) {
+                if(username.isBlank()) {
+                    Log.d("AAA Captured username: ", "Please fill in username")
+                    //TODO: Display Validation Message to User
+                } else {
+                    //TODO: Navigate to QuestionActivity
+                    Log.d( "AAA Captured username: ", username.toString())
 
-            val intent = Intent(this, CategoryActivity::class.java)
+                    val intent = Intent(this, CategoryActivity::class.java)
 
-            startActivity(intent)
-//          finish()
+                    //pass extra data to the next activity
+                    intent.putExtra("username", username.toString()) // passing username
 
+                    startActivity(intent)
+//                    finish()
+                }
+            }
 
         }
+
 
     }
 }

@@ -13,11 +13,6 @@
         android:theme="@style/splashScreenTheme"
         tools:targetApi="31">
         <activity
-            android:name=".models.MainActivity"
-            android:exported="false"
-            android:label="@string/title_activity_main"
-            android:theme="@style/splashScreenTheme" />
-        <activity
             android:name=".GeneralQuestionActivity"
             android:exported="false" />
         <activity
@@ -25,9 +20,6 @@
             android:exported="false" />
         <activity
             android:name=".SongQuestionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".QuestionActivity"
             android:exported="false" />
         <activity
             android:name=".CategoryActivity"

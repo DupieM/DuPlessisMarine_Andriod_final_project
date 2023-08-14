@@ -7,5 +7,7 @@
     <color name="text">#1C3858</color>
     <color name="text2">#2D2638</color>
     <color name="text3">#050F28</color>
+    <color name="text4">#FFFFFF</color>
+    <color name="card">#6C47A6</color>
 
 </resources>

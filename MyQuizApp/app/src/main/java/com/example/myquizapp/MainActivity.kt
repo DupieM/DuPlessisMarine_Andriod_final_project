@@ -14,7 +14,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myquizapp.databinding.ActivityMainBinding
-import com.example.myquizapp.ui.theme.MyQuizAppTheme
 
 class MainActivity : ComponentActivity() {
 
@@ -31,26 +30,13 @@ class MainActivity : ComponentActivity() {
 
 //        setContentView(R.layout.activity_main)
 
-        binding.btnStart.setOnClickListener {
-            var username = binding.etUsername.text
+        binding.btnSecond.setOnClickListener {
 
-            if (username != null) {
-                if(username.isBlank()) {
-                    Log.d("AAA Captured username: ", "Please fill in username")
-                    //TODO: Display Validation Message to User
-                } else {
-                    //TODO: Navigate to QuestionActivity
-                    Log.d( "AAA Captured username: ", username.toString())
+            val intent = Intent(this, HomeActivity::class.java)
 
-                    val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+//          finish()
 
-                    //pass extra data to the next activity
-                    intent.putExtra("username", username.toString()) // passing username
-
-                    startActivity(intent)
-//                    finish()
-                }
-            }
 
         }
 
