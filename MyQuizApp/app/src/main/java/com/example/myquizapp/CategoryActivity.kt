@@ -1,5 +1,6 @@
 package com.example.myquizapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -29,5 +30,24 @@ class CategoryActivity : AppCompatActivity() {
         Log.d("AAA Welcome", username.toString())
 
         binding.tvHello.text = "Hi $username"
+
+        binding.btSong.setOnClickListener {
+            val intent = Intent(this, SongQuestionActivity::class.java)
+
+            startActivity(intent)
+        }
+
+//        binding.btGroup.setOnClickListener {
+//            val intent = Intent(this, GroupQuestionActivity::class.java)
+//
+//            startActivity(intent)
+//        }
+//
+//        binding.btGeneral.setOnClickListener {
+//            val intent = Intent(this, GeneralQuestionActivity::class.java)
+//
+//            startActivity(intent)
+//        }
+
     }
 }

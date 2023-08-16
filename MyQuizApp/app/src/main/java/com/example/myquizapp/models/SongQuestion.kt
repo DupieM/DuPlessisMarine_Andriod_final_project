@@ -1,6 +1,6 @@
 package com.example.myquizapp.models
 
-data class Song_Question(
+data class SongQuestion(
     val id: Int,
     val questionText: String,
     val optionOne: String,
