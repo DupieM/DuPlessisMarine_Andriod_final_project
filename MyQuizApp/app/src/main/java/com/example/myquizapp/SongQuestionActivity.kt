@@ -29,17 +29,21 @@ class SongQuestionActivity : AppCompatActivity() {
 
 //        setContentView(R.layout.activity_song_question)
 
+        val questionNumber = intent.getIntExtra("questionNumber", 1)
+
 //        val questionNumber = intent.extras?.getInt("questionNumber", 1)
 
-//        if (questionNumber == 1){
-//            getAllQuestions()
-//        }
+        var userScore = 0
 
-        getAllQuestions()
+        if (questionNumber == 1){
+            getAllQuestions()
+        }
+
+//        getAllQuestions()
 
         val listOfQuestions :ArrayList<SongQuestion> = allQuestions
 
-        var questionNumber: Int = 1
+//        var questionNumber: Int = 4
         val currentQuestion = listOfQuestions[questionNumber!!-1]
 
         Log.d("AAA First Question: ", currentQuestion.questionText)
@@ -62,11 +66,16 @@ class SongQuestionActivity : AppCompatActivity() {
                 // check if the user selected the correct one?
                 var selectedAnswerValue = findViewById<RadioButton>(selectedAnswer)
 
+                if(selectedAnswerValue.text == currentQuestion.correctAnswer) {
+                    // update score
+                    userScore++
+                }
+
                 //TODO: navigate to the next question
                 //option 2: navigating to the same question and updating the values
                 val intent = Intent(this, SongQuestionActivity::class.java)
 
-                if (questionNumber== 1){
+                if (questionNumber == 1){
                     intent.putExtra("questionNumber", questionNumber+1)
                 }
 
