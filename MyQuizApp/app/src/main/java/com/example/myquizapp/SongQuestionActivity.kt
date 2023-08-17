@@ -75,7 +75,7 @@ class SongQuestionActivity : AppCompatActivity() {
                 //option 2: navigating to the same question and updating the values
                 val intent = Intent(this, SongQuestionActivity::class.java)
 
-                if (questionNumber == 1){
+                if (questionNumber != null){
                     intent.putExtra("questionNumber", questionNumber+1)
                 }
 
@@ -85,6 +85,16 @@ class SongQuestionActivity : AppCompatActivity() {
             }else {
                 Toast.makeText(this, "Please select your answer", Toast.LENGTH_LONG).show()
             }
+        }
+
+        binding.btBack.setOnClickListener {
+
+            val intent = Intent(this, CategoryActivity::class.java)
+
+            startActivity(intent)
+//          finish()
+
+
         }
 
     }

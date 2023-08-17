@@ -40,7 +40,7 @@ object Song_Constants {
 
         val que4 = SongQuestion(
             id = 4,
-            questionText = "“I’m up above the world so high I’ll be there shinning day and night they wonder how my spotlight is so bright” is the chorus of which song by Stray Kids.",
+            questionText = "“Swerving, I’m speeding on Serpent Road .... Best of the best on first class” is the chorus of which song by Stray Kids.",
             optionOne = "Back Door",
             optionTwo = "S-Class",
             optionThree = "Gods menu",
@@ -60,7 +60,7 @@ object Song_Constants {
 
         val que6 = SongQuestion(
             id = 6,
-            questionText = "The chorus “I feel it, my head’s in a Daze x2, I’m addicted, I Replay Play Play” is from the famous song ‘Drunk-Dazed’ by which K-Pop boy group ….",
+            questionText = "The chorus “I feel it, my head’s in a Daze x2” is from the famous song ‘Drunk-Dazed’ by which K-Pop boy group ….",
             optionOne = "Enhyphen",
             optionTwo = "TXT",
             optionThree = "BigBang",

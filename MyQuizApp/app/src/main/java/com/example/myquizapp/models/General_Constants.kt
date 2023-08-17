@@ -3,12 +3,12 @@ package com.example.myquizapp.models
 object General_Constants {
 
     //array for all our question
-    var allQuestions = ArrayList<General_Question>()
+    var allQuestions = ArrayList<GeneralQuestion>()
 
     //function to populate our questions
     fun getAllQuestions() {
 
-        val que1 = General_Question(
+        val que1 = GeneralQuestion(
             id = 1,
             questionText = "Which K-Pop group named their fanbase as “ARMY”?",
             optionOne = "Twice",
@@ -18,7 +18,7 @@ object General_Constants {
             correctAnswer = "BTS"
         )
 
-        val que2 = General_Question(
+        val que2 = GeneralQuestion(
             id = 2,
             questionText = "Which K-Pop girl group performed in North Korea.",
             optionOne = "Red Velvet",
@@ -28,7 +28,7 @@ object General_Constants {
             correctAnswer = "Red Velvet"
         )
 
-        val que3 = General_Question(
+        val que3 = GeneralQuestion(
             id = 3,
             questionText = "How many members dose the K-Pop girl group Twice have.",
             optionOne = "3",
@@ -38,7 +38,7 @@ object General_Constants {
             correctAnswer = "9"
         )
 
-        val que4 = General_Question(
+        val que4 = GeneralQuestion(
             id = 4,
             questionText = "Who were or is still the big 3 companies of K-Pop?",
             optionOne = "Hybe, JYP & YG",
@@ -48,7 +48,7 @@ object General_Constants {
             correctAnswer = "SM, JYP & YG "
         )
 
-        val que5 = General_Question(
+        val que5 = GeneralQuestion(
             id = 5,
             questionText = "Jungkook from BTS had a collaboration with which American Artist to produce the song ‘Left and Right’.",
             optionOne = "Charlie Puth ",
@@ -58,7 +58,7 @@ object General_Constants {
             correctAnswer = "Charlie Puth "
         )
 
-        val que6 = General_Question(
+        val que6 = GeneralQuestion(
             id = 6,
             questionText = "Which K-Pop artists collaboration happened in 2020 to produce the song ‘Eight’.",
             optionOne = "Taeyang & Lisa (BP)",
