@@ -157,10 +157,12 @@
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-40dp"
-                android:backgroundTint="@color/primary"
+                android:backgroundTint="@color/light_purple"
                 android:paddingVertical="12dp"
                 android:text="@string/next"
-                android:textSize="21sp"
+                android:textSize="23sp"
+                android:textColor="@color/text2"
+                android:textStyle="bold"
                 android:layout_marginLeft="35dp"/>
 
         </LinearLayout>

@@ -38,19 +38,21 @@ class CategoryActivity : AppCompatActivity() {
 //            finish()
         }
 
-        binding.btGeneral.setOnClickListener {
-            val intent = Intent(this, GeneralQuestionActivity::class.java)
-
-            startActivity(intent)
-//            finish()
-        }
-
-//        binding.btGroup.setOnClickListener {
+        //        binding.btGroup.setOnClickListener {
 //            val intent = Intent(this, GroupQuestionActivity::class.java)
 //
 //            startActivity(intent)
 //        }
 ////
+
+//        binding.btGeneral.setOnClickListener {
+//            val intent = Intent(this, GeneralQuestionActivity::class.java)
+//
+//            startActivity(intent)
+////            finish()
+//        }
+
+
 
 
     }

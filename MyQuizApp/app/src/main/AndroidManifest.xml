@@ -13,6 +13,18 @@
         android:theme="@style/splashScreenTheme"
         tools:targetApi="31">
         <activity
+            android:name=".Result3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Result2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
             android:name=".GeneralQuestionActivity"
             android:exported="false" />
         <activity
