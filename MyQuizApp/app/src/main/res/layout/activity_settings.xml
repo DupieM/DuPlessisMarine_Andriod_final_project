@@ -10,6 +10,7 @@
     tools:context=".SettingsActivity">
 
     <ImageView
+        android:id="@+id/bt_home"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="10dp"

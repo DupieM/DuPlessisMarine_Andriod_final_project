@@ -40,6 +40,16 @@ class MainActivity : ComponentActivity() {
 
         }
 
+        binding.btnEnd.setOnClickListener {
+
+            val intent = Intent(this, SettingsActivity::class.java)
+
+            startActivity(intent)
+//          finish()
+
+
+        }
+
     }
 
 }
