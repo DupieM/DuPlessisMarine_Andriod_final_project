@@ -42,7 +42,7 @@ class ResultActivity : AppCompatActivity() {
 
         binding.btFinal.setOnClickListener {
 
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, CategoryActivity::class.java)
 
             startActivity(intent)
 //          finish()
