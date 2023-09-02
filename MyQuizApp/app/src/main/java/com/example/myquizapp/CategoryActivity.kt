@@ -35,24 +35,30 @@ class CategoryActivity : AppCompatActivity() {
             val intent = Intent(this, SongQuestionActivity::class.java)
 
             startActivity(intent)
-//            finish()
+            finish()
         }
 
-        //        binding.btGroup.setOnClickListener {
-//            val intent = Intent(this, GroupQuestionActivity::class.java)
-//
-//            startActivity(intent)
-//        }
-////
+        binding.btGroup.setOnClickListener {
+            val intent = Intent(this, GroupQuestionActivity::class.java)
 
-//        binding.btGeneral.setOnClickListener {
-//            val intent = Intent(this, GeneralQuestionActivity::class.java)
-//
-//            startActivity(intent)
-////            finish()
-//        }
+            startActivity(intent)
+            finish()
+        }
 
 
+        binding.btGeneral.setOnClickListener {
+            val intent = Intent(this, GeneralQuestionActivity::class.java)
+
+            startActivity(intent)
+            finish()
+        }
+
+        binding.btBack3.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+
+            startActivity(intent)
+            finish()
+        }
 
 
     }

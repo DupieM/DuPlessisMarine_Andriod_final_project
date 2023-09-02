@@ -6,7 +6,10 @@
     android:layout_height="match_parent"
     android:background="@color/primary"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp"
     tools:context=".SettingsActivity">
 
     <ImageView
@@ -49,31 +52,172 @@
         >
 
         <TextView
-            android:id="@+id/tv_hello"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="K-Pop Quiz is a app for any K-Pop lover or normal peole in general that wat to test their knowledge on questions related to K-Pop in general."
+            android:id="@+id/tv_name"
+            android:layout_width="83dp"
+            android:layout_height="47dp"
+            android:text="Name:"
             android:textColor="@color/text3"
-            android:textAlignment="center"
-            android:textSize="23sp"
+            android:textSize="21sp"
+            android:textStyle="bold"
             android:layout_marginTop="0dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="10dp"
             android:padding="10dp"
-
             />
 
-    </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/tv_name2"
+            android:layout_width="122dp"
+            android:layout_height="45dp"
+            android:text="K-Pop Quiz"
+            android:textColor="@color/text3"
+            android:textSize="19sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"
+            android:padding="10dp"
+            />
 
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="99dp"
+            android:layout_height="44dp"
+            android:text="Version:"
+            android:textColor="@color/text3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_version2"
+            android:layout_width="202dp"
+            android:layout_height="45dp"
+            android:text="1.4/79823_83l9rfn54"
+            android:textColor="@color/text3"
+            android:textSize="19sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="84dp"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="131dp"
+            android:layout_height="46dp"
+            android:text="Description:"
+            android:textColor="@color/text3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_des2"
+            android:layout_width="227dp"
+            android:layout_height="45dp"
+            android:text="K-Pop Quiz is a app for"
+            android:textColor="@color/text3"
+            android:textSize="19sp"
+            android:layout_marginTop="61dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="120dp"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_des3"
+            android:layout_width="347dp"
+            android:layout_height="45dp"
+            android:text="any K-Pop lover or normal peole in"
+            android:textColor="@color/text3"
+            android:textSize="19sp"
+            android:layout_marginTop="88dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="3dp"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_des4"
+            android:layout_width="356dp"
+            android:layout_height="45dp"
+            android:text="general that wat to test their knowledge"
+            android:textColor="@color/text3"
+            android:textSize="19sp"
+            android:layout_marginTop="116dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="2dp"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_des5"
+            android:layout_width="286dp"
+            android:layout_height="45dp"
+            android:text="on questions related to K-Pop."
+            android:textColor="@color/text3"
+            android:textSize="19sp"
+            android:layout_marginTop="144dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="2dp"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_dev"
+            android:layout_width="128dp"
+            android:layout_height="46dp"
+            android:text="Developer:"
+            android:textColor="@color/text3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="175dp"
+            android:layout_marginBottom="4dp"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_dev2"
+            android:layout_width="204dp"
+            android:layout_height="45dp"
+            android:text="Mariné du Plessis"
+            android:textColor="@color/text3"
+            android:textSize="19sp"
+            android:layout_marginTop="176dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="106dp"
+            android:padding="10dp"
+            />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_hello"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="  "-->
+<!--            android:textColor="@color/text3"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="19sp"-->
+<!--            android:layout_marginTop="60dp"-->
+<!--            android:layout_marginBottom="3dp"-->
+<!--            android:padding="10dp"-->
+<!--            />-->
+
+    </androidx.cardview.widget.CardView>
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="General Settings"
+        android:text="GitHub Repositry"
         android:textAlignment="center"
         android:textColor="@color/text2"
         android:textSize="37sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -89,46 +233,16 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Player Name"
+            android:text="https://github.com/DupieM/DuPlessisMarine_Andriod_final_project"
             android:textColor="@color/text3"
-            android:textSize="27sp"
+            android:textAlignment="center"
+            android:textSize="22sp"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="3dp"
             android:padding="10dp"
             />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Notification"
-            android:textColor="@color/text3"
-            android:textSize="27sp"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="3dp"
-            android:padding="10dp"
-            />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Wi-fi/ Mobile Data"
-            android:textColor="@color/text3"
-            android:textSize="27sp"
-            android:layout_marginTop="80dp"
-            android:layout_marginBottom="3dp"
-            android:padding="10dp"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Player icon"
-            android:textColor="@color/text3"
-            android:textSize="27sp"
-            android:layout_marginTop="120dp"
-            android:layout_marginBottom="3dp"
-            android:padding="10dp"
-            />
 
     </androidx.cardview.widget.CardView>
 

@@ -42,13 +42,13 @@ class GeneralQuestionActivity : AppCompatActivity() {
 
         Log.d("AAA First Question: ", currentQuestion.questionText)
 
-        binding.tvHello.text = currentQuestion.questionText
-        binding.rbOptionOne.text = currentQuestion.optionOne
-        binding.rbOptionTwo.text = currentQuestion.optionTwo
-        binding.rbOptionThree.text = currentQuestion.optionThree
-        binding.rbOptionFour.text = currentQuestion.optionFour
-        binding.pbProgress.progress = currentQuestion.id
-        binding.txNumber.text = "${currentQuestion.id}/${listOfQuestions.count()}"
+        binding.tvHello3.text = currentQuestion.questionText
+        binding.rbOptionOne3.text = currentQuestion.optionOne
+        binding.rbOptionTwo3.text = currentQuestion.optionTwo
+        binding.rbOptionThree3.text = currentQuestion.optionThree
+        binding.rbOptionFour3.text = currentQuestion.optionFour
+        binding.pbProgress3.progress = currentQuestion.id
+        binding.txNumber3.text = "${currentQuestion.id}/${listOfQuestions.count()}"
 //
 //
         binding.btnNext2.setOnClickListener {
@@ -66,15 +66,27 @@ class GeneralQuestionActivity : AppCompatActivity() {
                     userScore++
                 }
 
-                //TODO: navigate to the next question
-                //option 2: navigating to the same question and updating the values
-                val intent = Intent(this, SongQuestionActivity::class.java)
+                if(questionNumber == listOfQuestions.count()) {
+                    Log.d("AAA RESULT:", userScore.toString())
+                    val intent = Intent(this, ResultActivity::class.java)
+                    intent.putExtra("userscore", userScore)
+                    intent.putExtra("totalQuestions", listOfQuestions.count())
 
-                if (questionNumber != null){
-                    intent.putExtra("questionNumber", questionNumber+1)
+                    startActivity(intent)
+                    finish()
+                }else {
+                    //navigate to the next question
+                    //option 2: navigating to the same question and updating the values
+                    val intent = Intent(this, GeneralQuestionActivity::class.java)
+                    if (questionNumber != null){
+                        intent.putExtra("questionNumber", questionNumber+1)
+                    }
+                    //Pass score
+                    intent.putExtra("userscore", userScore)
+
+                    startActivity(intent)
+                    finish()
                 }
-
-                startActivity(intent)
 
 //                Log.d("AAA Answer Selected : ", selectedAnswerValue.text.toString())
             }else {

@@ -36,7 +36,7 @@
         android:gravity="center">
 
         <ProgressBar
-            android:id="@+id/pb_progress"
+            android:id="@+id/pb_progress3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:minHeight="50dp"
@@ -49,7 +49,7 @@
             />
 
         <TextView
-            android:id="@+id/tx_number"
+            android:id="@+id/tx_number3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1/6"
@@ -93,7 +93,7 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/tv_hello"
+                android:id="@+id/tv_hello3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="My question is"
@@ -114,7 +114,7 @@
                 android:layout_marginLeft="30dp">
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/rb_option_one"
+                    android:id="@+id/rb_option_one3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Answer 1"
@@ -123,7 +123,7 @@
                     />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/rb_option_two"
+                    android:id="@+id/rb_option_two3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Answer 2"
@@ -132,7 +132,7 @@
                     />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/rb_option_three"
+                    android:id="@+id/rb_option_three3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Answer 3"
@@ -141,7 +141,7 @@
                     />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/rb_option_four"
+                    android:id="@+id/rb_option_four3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Answer 4"

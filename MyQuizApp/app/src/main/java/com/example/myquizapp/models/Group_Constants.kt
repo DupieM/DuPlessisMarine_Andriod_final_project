@@ -5,12 +5,12 @@ import com.example.myquizapp.R
 object Group_Constants {
 
     //array for all our question
-    var allQuestions = ArrayList<Group_Question>()
+    var allQuestions = ArrayList<GroupQuestion>()
 
     //function to populate our questions
     fun getAllQuestions() {
 
-        val que1 = Group_Question(
+        val que1 = GroupQuestion(
             id = 1,
             questionText = "With which entertainment company is the K-Pop group, as shown below, associated.",
             icon = R.drawable.bts,
@@ -20,7 +20,7 @@ object Group_Constants {
             correctAnswer = "Hybe"
         )
 
-        val que2 = Group_Question(
+        val que2 = GroupQuestion(
             id = 2,
             questionText = "With which entertainment company is the K-Pop group, as shown below, associated.",
             icon = R.drawable.blackpink,
@@ -30,7 +30,7 @@ object Group_Constants {
             correctAnswer = "YG"
         )
 
-        val que3 = Group_Question(
+        val que3 = GroupQuestion(
             id = 3,
             questionText = "With which entertainment company is the K-Pop group, as shown below, associated.",
             icon = R.drawable.straykids,
@@ -40,7 +40,7 @@ object Group_Constants {
             correctAnswer = "JYP"
         )
 
-        val que4 = Group_Question(
+        val que4 = GroupQuestion(
             id = 4,
             questionText = "With which entertainment company is the K-Pop group, as shown below, associated.",
             icon = R.drawable.gidle,
@@ -50,7 +50,7 @@ object Group_Constants {
             correctAnswer = "Cube"
         )
 
-        val que5 = Group_Question(
+        val que5 = GroupQuestion(
             id = 5,
             questionText = "With which entertainment company is the K-Pop group, as shown below, associated.",
             icon = R.drawable.redvelvet,
@@ -60,7 +60,7 @@ object Group_Constants {
             correctAnswer = "SM"
         )
 
-        val que6 = Group_Question(
+        val que6 = GroupQuestion(
             id = 6,
             questionText = "With which entertainment company is the K-Pop group, as shown below, associated.",
             icon = R.drawable.monstax,

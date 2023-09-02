@@ -10,6 +10,7 @@
     tools:context=".CategoryActivity">
 
     <ImageView
+        android:id="@+id/bt_back3"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="10dp"

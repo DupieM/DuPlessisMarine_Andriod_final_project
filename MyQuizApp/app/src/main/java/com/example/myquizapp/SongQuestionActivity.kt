@@ -73,7 +73,6 @@ class SongQuestionActivity : AppCompatActivity() {
                     userScore = userScore!! + 1
                 }
 
-                //TODO: navigate to the next question
                 //option 2: navigating to the same question and updating the values
 
                 if(questionNumber == listOfQuestions.count()) {
@@ -97,10 +96,6 @@ class SongQuestionActivity : AppCompatActivity() {
                     startActivity(intent)
                     finish()
                 }
-
-
-
-
 //                Log.d("AAA Answer Selected : ", selectedAnswerValue.text.toString())
             }else {
                 Toast.makeText(this, "Please select your answer", Toast.LENGTH_LONG).show()

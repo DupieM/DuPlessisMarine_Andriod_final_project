@@ -1,6 +1,6 @@
 package com.example.myquizapp.models
 
-data class Group_Question(
+data class GroupQuestion(
     val id: Int,
     val questionText: String,
     val icon: Int, // all images should be int
