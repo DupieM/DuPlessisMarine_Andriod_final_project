@@ -28,6 +28,8 @@ class GroupQuestionActivity : AppCompatActivity() {
         //setContentView divines which xml layout to use as my bfrontend
         setContentView(view)
 
+        val username = intent.getStringExtra("username")
+
         val questionNumber = intent.getIntExtra("questionNumber", 1)
 
         var userScore = intent.getIntExtra("userscore", 0); // if first question set it to zero
@@ -36,6 +38,7 @@ class GroupQuestionActivity : AppCompatActivity() {
             getAllQuestions()
         }
 
+        binding.tvName4.text = username.toString()
 
         val listOfQuestions :ArrayList<GroupQuestion> = allQuestions
 
@@ -75,6 +78,8 @@ class GroupQuestionActivity : AppCompatActivity() {
                     intent.putExtra("userscore", userScore)
                     intent.putExtra("totalQuestions", listOfQuestions.count())
 
+                    intent.putExtra("username", username.toString()) // passing username
+
                     startActivity(intent)
                     finish()
                 }else {
@@ -86,6 +91,8 @@ class GroupQuestionActivity : AppCompatActivity() {
                     }
                     //Pass score
                     intent.putExtra("userscore", userScore)
+
+                    intent.putExtra("username", username.toString()) // passing username
 
                     startActivity(intent)
                     finish()

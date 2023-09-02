@@ -26,6 +26,8 @@ class GeneralQuestionActivity : AppCompatActivity() {
 
 //        setContentView(R.layout.activity_general_question)
 
+        val username = intent.getStringExtra("username")
+
         val questionNumber = intent.getIntExtra("questionNumber", 1)
 
         var userScore = 0
@@ -35,6 +37,8 @@ class GeneralQuestionActivity : AppCompatActivity() {
         }
 
 //        getAllQuestions()
+
+        binding.tvName5.text = username.toString()
 
         val listOfQuestions :ArrayList<GeneralQuestion> = allQuestions
 
@@ -72,6 +76,8 @@ class GeneralQuestionActivity : AppCompatActivity() {
                     intent.putExtra("userscore", userScore)
                     intent.putExtra("totalQuestions", listOfQuestions.count())
 
+                    intent.putExtra("username", username.toString()) // passing username
+
                     startActivity(intent)
                     finish()
                 }else {
@@ -83,6 +89,8 @@ class GeneralQuestionActivity : AppCompatActivity() {
                     }
                     //Pass score
                     intent.putExtra("userscore", userScore)
+
+                    intent.putExtra("username", username.toString()) // passing username
 
                     startActivity(intent)
                     finish()

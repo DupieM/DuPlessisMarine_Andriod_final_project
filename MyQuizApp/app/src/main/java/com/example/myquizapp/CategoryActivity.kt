@@ -25,7 +25,7 @@ class CategoryActivity : AppCompatActivity() {
 //        setContentView(R.layout.activity_category)
 
         //Get passed data from previous activity
-        val username = intent.extras?.getString("username")
+        val username = intent.getStringExtra("username")
 
         Log.d("AAA Welcome", username.toString())
 
@@ -34,12 +34,16 @@ class CategoryActivity : AppCompatActivity() {
         binding.btSong.setOnClickListener {
             val intent = Intent(this, SongQuestionActivity::class.java)
 
+            intent.putExtra("username", username.toString()) // passing username
+
             startActivity(intent)
             finish()
         }
 
         binding.btGroup.setOnClickListener {
             val intent = Intent(this, GroupQuestionActivity::class.java)
+
+            intent.putExtra("username", username.toString()) // passing username
 
             startActivity(intent)
             finish()
@@ -48,6 +52,8 @@ class CategoryActivity : AppCompatActivity() {
 
         binding.btGeneral.setOnClickListener {
             val intent = Intent(this, GeneralQuestionActivity::class.java)
+
+            intent.putExtra("username", username.toString()) // passing username
 
             startActivity(intent)
             finish()
