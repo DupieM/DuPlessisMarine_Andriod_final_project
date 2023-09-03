@@ -6,6 +6,6 @@ data class GeneralQuestion(
     val optionOne: String,
     val optionTwo: String,
     val optionThree: String,
-    val optionFour: String?, // question marks means this value kan be null
+    val optionFour: String,
     val correctAnswer: String
 )

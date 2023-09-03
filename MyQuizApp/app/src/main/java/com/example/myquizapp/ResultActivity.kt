@@ -30,7 +30,7 @@ class ResultActivity : AppCompatActivity() {
 
         val username = intent.extras?.getString("username")
 
-        binding.tvResultname.text = "Well done " + username.toString()
+        binding.tvResultname.text = "Excellent work " + username.toString()
 
         //update our UI
         binding.tvResultscore.text = userScore.toString() + "/" + totalQuestions.toString()
@@ -48,24 +48,11 @@ class ResultActivity : AppCompatActivity() {
             apply() //doing the edit
         }
 
-        binding.fabLastscore.setOnClickListener{
-            val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
-
-            val lastUser = sharedPref.getString("last_user", "No user found")
-            val lastScore = sharedPref.getInt("last_score", 0)
-
-            Log.d("AAA LAST USER FROM", lastUser + lastScore.toString())
-
-            val snack = Snackbar.make(it, lastUser!!, Snackbar.LENGTH_LONG)
-            snack.setAction(lastScore.toString(), View.OnClickListener{
-                //nothing
-            })
-            snack.show()
-        }
-
         binding.btFinal.setOnClickListener {
 
             val intent = Intent(this, CategoryActivity::class.java)
+
+            intent.putExtra("username", username.toString()) // passing username
 
             startActivity(intent)
 //          finish()

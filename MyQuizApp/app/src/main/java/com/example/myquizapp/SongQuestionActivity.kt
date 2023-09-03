@@ -35,6 +35,10 @@ class SongQuestionActivity : AppCompatActivity() {
 
 //        val questionNumber = intent.extras?.getInt("questionNumber", 1)
 
+        if (username != null) {
+            Log.d("AAA username: ", username)
+        }
+
         binding.tvName3.text = username.toString()
 
         var userScore = intent.getIntExtra("userscore", 0); // if first question set it to zero
@@ -80,15 +84,53 @@ class SongQuestionActivity : AppCompatActivity() {
                 //option 2: navigating to the same question and updating the values
 
                 if(questionNumber == listOfQuestions.count()) {
-                    Log.d("AAA RESULT:", userScore.toString())
-                    val intent =Intent(this, ResultActivity::class.java)
-                    intent.putExtra("userscore", userScore)
-                    intent.putExtra("totalQuestions", listOfQuestions.count())
+                    if (userScore == 6){
 
-                    intent.putExtra("username", username.toString()) // passing username
+                        Log.d("AAA RESULT:", userScore.toString())
+                        val intent =Intent(this, ResultActivity::class.java)
+                        intent.putExtra("userscore", userScore)
+                        intent.putExtra("totalQuestions", listOfQuestions.count())
 
-                    startActivity(intent)
-                    finish()
+                        intent.putExtra("username", username.toString()) // passing username
+
+                        startActivity(intent)
+                        finish()
+
+                    } else if (userScore == 4) {
+
+                        Log.d("AAA RESULT:", userScore.toString())
+                        val intent =Intent(this, Result2Activity::class.java)
+                        intent.putExtra("userscore", userScore)
+                        intent.putExtra("totalQuestions", listOfQuestions.count())
+
+                        intent.putExtra("username", username.toString()) // passing username
+
+                        startActivity(intent)
+                        finish()
+
+                    } else if (userScore == 5){
+                        Log.d("AAA RESULT:", userScore.toString())
+                        val intent =Intent(this, Result2Activity::class.java)
+                        intent.putExtra("userscore", userScore)
+                        intent.putExtra("totalQuestions", listOfQuestions.count())
+
+                        intent.putExtra("username", username.toString()) // passing username
+
+                        startActivity(intent)
+                        finish()
+                    } else {
+
+                        Log.d("AAA RESULT:", userScore.toString())
+                        val intent =Intent(this, Result3Activity::class.java)
+                        intent.putExtra("userscore", userScore)
+                        intent.putExtra("totalQuestions", listOfQuestions.count())
+
+                        intent.putExtra("username", username.toString()) // passing username
+
+                        startActivity(intent)
+                        finish()
+                    }
+
                 }else {
                     //navigate to the next question
                     //option 2: navigating to the same question and updating the values

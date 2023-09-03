@@ -1,14 +1,17 @@
 package com.example.myquizapp
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.LinearLayout
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.myquizapp.databinding.ActivityCategoryBinding
 import com.example.myquizapp.databinding.ActivityHomeBinding
 import com.example.myquizapp.databinding.ActivityMainBinding
+import com.google.android.material.snackbar.Snackbar
 
 class CategoryActivity : AppCompatActivity() {
 
@@ -43,6 +46,7 @@ class CategoryActivity : AppCompatActivity() {
         binding.btGroup.setOnClickListener {
             val intent = Intent(this, GroupQuestionActivity::class.java)
 
+
             intent.putExtra("username", username.toString()) // passing username
 
             startActivity(intent)
@@ -59,13 +63,27 @@ class CategoryActivity : AppCompatActivity() {
             finish()
         }
 
+        binding.fabLastscore.setOnClickListener{
+            val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
+
+            val lastUser = sharedPref.getString("last_user", "No user found")
+            val lastScore = sharedPref.getInt("last_score", 0)
+
+            Log.d("AAA LAST USER FROM", lastUser + lastScore.toString())
+
+            val snack = Snackbar.make(it, "Your previous score was", Snackbar.LENGTH_LONG)
+            snack.setAction(lastScore.toString(), View.OnClickListener{
+                //nothing
+            })
+            snack.show()
+        }
+
         binding.btBack3.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
 
             startActivity(intent)
             finish()
         }
-
 
     }
 }

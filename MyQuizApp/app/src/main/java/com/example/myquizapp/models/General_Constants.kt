@@ -42,20 +42,20 @@ object General_Constants {
             id = 4,
             questionText = "Who were or is still the big 3 companies of K-Pop?",
             optionOne = "Hybe, JYP & YG",
-            optionTwo = "SM, JYP & YG ",
+            optionTwo = "SM, JYP & YG",
             optionThree = "YG, Cube & JYP",
             optionFour = "P nation, Hybe & Starship",
-            correctAnswer = "SM, JYP & YG "
+            correctAnswer = "SM, JYP & YG"
         )
 
         val que5 = GeneralQuestion(
             id = 5,
             questionText = "Jungkook from BTS had a collaboration with which American Artist to produce the song ‘Left and Right’.",
-            optionOne = "Charlie Puth ",
+            optionOne = "Charlie Puth",
             optionTwo = "J. Cole",
             optionThree = "Miley Cyrus",
             optionFour = "Bruno Mars",
-            correctAnswer = "Charlie Puth "
+            correctAnswer = "Charlie Puth"
         )
 
         val que6 = GeneralQuestion(
@@ -64,8 +64,8 @@ object General_Constants {
             optionOne = "Taeyang & Lisa (BP)",
             optionTwo = "Taeyang & Jimin (BTS)",
             optionThree = "PSY & CL",
-            optionFour = "UI & Suga (BTS) ",
-            correctAnswer = "UI & Suga (BTS) "
+            optionFour = "UI & Suga (BTS)",
+            correctAnswer = "UI & Suga (BTS)"
         )
 
         allQuestions.add(que1)
