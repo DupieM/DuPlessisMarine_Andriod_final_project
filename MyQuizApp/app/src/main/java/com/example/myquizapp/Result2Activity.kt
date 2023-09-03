@@ -30,7 +30,7 @@ class Result2Activity : AppCompatActivity() {
 
         val username = intent.extras?.getString("username")
 
-        binding.tvResultname2.text = "Well done " + username.toString()
+        binding.tvResultname2.text = "Well done " + username.toString() + "!"
 
         //update our UI
         binding.tvResultscore2.text = userScore.toString() + "/" + totalQuestions.toString()
