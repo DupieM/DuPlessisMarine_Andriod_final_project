@@ -5,6 +5,11 @@ object General_Constants {
     //array for all our question
     var allQuestions = ArrayList<GeneralQuestion>()
 
+    //function to clear all questions
+    fun clearAllQuestions() {
+        allQuestions.clear()
+    }
+
     //function to populate our questions
     fun getAllQuestions() {
 

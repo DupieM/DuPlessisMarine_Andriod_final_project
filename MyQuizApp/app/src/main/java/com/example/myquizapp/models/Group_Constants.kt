@@ -7,6 +7,11 @@ object Group_Constants {
     //array for all our question
     var allQuestions = ArrayList<GroupQuestion>()
 
+    //function to clear all questions
+    fun clearAllQuestions() {
+        allQuestions.clear()
+    }
+
     //function to populate our questions
     fun getAllQuestions() {
 

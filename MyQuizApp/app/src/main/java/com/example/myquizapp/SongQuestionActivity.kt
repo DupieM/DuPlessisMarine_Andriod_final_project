@@ -8,8 +8,10 @@ import android.widget.LinearLayout
 import android.widget.RadioButton
 import android.widget.Toast
 import com.example.myquizapp.databinding.ActivitySongQuestionBinding
+import com.example.myquizapp.models.General_Constants
 import com.example.myquizapp.models.SongQuestion
 import com.example.myquizapp.models.Song_Constants.allQuestions
+import com.example.myquizapp.models.Song_Constants.clearAllQuestions
 import com.example.myquizapp.models.Song_Constants.getAllQuestions
 
 
@@ -44,6 +46,7 @@ class SongQuestionActivity : AppCompatActivity() {
         var userScore = intent.getIntExtra("userscore", 0); // if first question set it to zero
 
         if (questionNumber == 1){
+            clearAllQuestions()
             getAllQuestions()
         }
 

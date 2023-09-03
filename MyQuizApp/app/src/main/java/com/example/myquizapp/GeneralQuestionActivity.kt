@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.example.myquizapp.databinding.ActivityGeneralQuestionBinding
 import com.example.myquizapp.models.GeneralQuestion
 import com.example.myquizapp.models.General_Constants.allQuestions
+import com.example.myquizapp.models.General_Constants.clearAllQuestions
 import com.example.myquizapp.models.General_Constants.getAllQuestions
 
 class GeneralQuestionActivity : AppCompatActivity() {
@@ -33,6 +34,7 @@ class GeneralQuestionActivity : AppCompatActivity() {
         var userScore = intent.getIntExtra("userscore", 0); // if first question set it to zero
 
         if (questionNumber == 1){
+            clearAllQuestions()
             getAllQuestions()
         }
 

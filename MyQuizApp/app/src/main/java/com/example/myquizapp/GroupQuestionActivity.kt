@@ -8,9 +8,11 @@ import android.widget.LinearLayout
 import android.widget.RadioButton
 import android.widget.Toast
 import com.example.myquizapp.databinding.ActivityGroupQuestionBinding
+
 import com.example.myquizapp.models.GroupQuestion
 import com.example.myquizapp.models.Group_Constants
 import com.example.myquizapp.models.Group_Constants.allQuestions
+import com.example.myquizapp.models.Group_Constants.clearAllQuestions
 import com.example.myquizapp.models.Group_Constants.getAllQuestions
 
 
@@ -35,6 +37,7 @@ class GroupQuestionActivity : AppCompatActivity() {
         var userScore = intent.getIntExtra("userscore", 0); // if first question set it to zero
 
         if (questionNumber == 1){
+            clearAllQuestions()
             getAllQuestions()
         }
 

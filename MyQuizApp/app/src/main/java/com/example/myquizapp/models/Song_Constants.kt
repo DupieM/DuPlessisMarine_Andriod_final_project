@@ -5,6 +5,11 @@ object Song_Constants {
     //array for all our question
     var allQuestions = ArrayList<SongQuestion>()
 
+    //function to clear all questions
+    fun clearAllQuestions() {
+       allQuestions.clear()
+    }
+
     //function to populate our questions
     fun getAllQuestions() {
 
