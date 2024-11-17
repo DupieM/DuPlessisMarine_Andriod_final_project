@@ -27,8 +27,9 @@ Compete against players from all over the world and see how your score is ranked
 ## Screens
 ### Home - Enter Username
 
-![Screen 1](readme_images/Home.png)
-![Screen 2](readme_images/Enter_user_name.png)
+<img src="readme_images/Home.png" alt="Screen 1" width="500px">
+
+<img src="readme_images/Enter_user_name.png" alt="Screen 2" width="500px">
 
 ### Video Demonstration
 
