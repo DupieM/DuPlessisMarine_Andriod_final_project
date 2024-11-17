@@ -35,7 +35,7 @@ Compete against players from all over the world and see how your score is ranked
 
 ### Category
 
-<img src="readme_images/Category.png" alt="Screen 2" width="250px">
+<img src="readme_images/Category.png" alt="Screen 2" width="200px">
 
 ### General - Song - Group Questions
 
