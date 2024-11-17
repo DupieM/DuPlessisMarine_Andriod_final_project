@@ -16,7 +16,7 @@
   
   <h3 align="center">K-Pop Quiz</h3>
 
-![Mockup 1](readme_images\mockup.png)
+![Mockup 1](readme_images/mockup.png)
 
 ### Quiz App Description
 Answer fun or interesting K-Pop questions to test your knowledge on K-Pop.
