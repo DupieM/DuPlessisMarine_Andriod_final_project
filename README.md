@@ -11,7 +11,7 @@
 <p align="center">
 
   <a href="https://github.com/username/projectname">
-    <img src="readme_images\icon.png" alt="Logo" width="140" height="140">
+    <img src="readme_images/icon.png" alt="Logo" width="140" height="140">
   </a>
   
   <h3 align="center">K-Pop Quiz</h3>
@@ -29,23 +29,23 @@ Compete against players from all over the world and see how your score is ranked
 ## Screens
 ### Home - Enter Username
 
-<img src="readme_images/Screens 1.png" alt="Screen 1" width="300px">
+<img src="readme_images/Screens 1.png" alt="Screen 1" width="380px">
 
 ### Category
 
-<img src="readme_images/Category.png" alt="Screen 2" width="300px">
+<img src="readme_images/Category.png" alt="Screen 2" width="250px">
 
 ### General - Song - Group Questions
 
-<img src="readme_images/questions.png" alt="Screen 3" width="300px">
+<img src="readme_images/questions.png" alt="Screen 3" width="400px">
 
 ### Result
 
-<img src="readme_images/Results.png" alt="Screen 4" width="300px">
+<img src="readme_images/Results.png" alt="Screen 4" width="200px">
 
 ### Settings
 
-<img src="readme_images/Settings.png" alt="Screen 5" width="300px">
+<img src="readme_images/Settings.png" alt="Screen 5" width="200px">
 
 ### Video Demonstration
 
